@@ -1,0 +1,8 @@
+.footer {
+  border-top: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.5rem 3rem; max-width: 1080px; margin: 0 auto;
+}
+.foot-t { font-family: 'JetBrains Mono', monospace; font-size: .65rem; color: var(--muted); letter-spacing: .06em; }
+.foot-t span { color: var(--violet); }
+@media (max-width: 768px) { .footer { padding: 1.5rem; flex-direction: column; gap: .4rem; text-align: center; } }

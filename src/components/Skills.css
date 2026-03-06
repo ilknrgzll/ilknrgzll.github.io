@@ -1,0 +1,29 @@
+.skills-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; }
+
+.sk-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 16px; padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: border-color .2s, background .2s, box-shadow .2s, transform .2s;
+}
+.sk-card:hover { border-color: var(--border2); background: var(--card-hover); box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.sk-head {
+  display: flex; align-items: center; gap: .65rem;
+  margin-bottom: 1.2rem; padding-bottom: .9rem;
+  border-bottom: 1px solid var(--border);
+}
+.sk-emoji { font-size: 1.2rem; line-height: 1; }
+.sk-name { font-size: .88rem; font-weight: 700; letter-spacing: -.01em; }
+
+.sk-list { list-style: none; display: flex; flex-direction: column; gap: .45rem; }
+.sk-list li { font-size: .8rem; color: var(--sub); display: flex; align-items: center; gap: .55rem; }
+
+.sk-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; background: var(--border2); }
+.sk-dot.v { background: var(--violet); }
+.sk-dot.e { background: var(--emerald); }
+.sk-dot.s { background: var(--sky); }
+.sk-dot.a { background: var(--amber); }
+
+@media (max-width: 900px) { .skills-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 500px) { .skills-grid { grid-template-columns: 1fr; } }

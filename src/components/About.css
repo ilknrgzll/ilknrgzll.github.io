@@ -1,0 +1,51 @@
+.about-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: 1rem; align-items: start; }
+
+.acard {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 16px; padding: 1.75rem;
+  margin-bottom: 1rem; box-shadow: var(--shadow);
+  transition: border-color .2s, background .2s;
+}
+.acard:last-child { margin-bottom: 0; }
+.acard:hover { border-color: var(--border2); background: var(--card-hover); }
+
+.acard-title {
+  font-family: 'JetBrains Mono', monospace; font-size: .63rem; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.1rem;
+}
+
+.ap { font-size: .875rem; color: var(--sub); line-height: 1.78; margin-bottom: .8rem; }
+.ap:last-child { margin-bottom: 0; }
+.ap strong { color: var(--text); font-weight: 600; }
+
+.lang-row { display: flex; align-items: center; justify-content: space-between; padding: .6rem 0; border-bottom: 1px solid var(--border); }
+.lang-row:last-child { border-bottom: none; }
+.lang-name { font-size: .85rem; font-weight: 600; }
+.dots { display: flex; gap: .3rem; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border2); }
+.dot.on { background: var(--violet); }
+
+.edu-deg { font-size: .95rem; font-weight: 700; letter-spacing: -.02em; }
+.edu-uni { font-size: .82rem; color: var(--sub); margin-top: .3rem; }
+.edu-year { font-family: 'JetBrains Mono', monospace; font-size: .65rem; color: var(--muted); margin-top: .25rem; }
+
+.cert-row {
+  display: flex; align-items: flex-start; gap: .65rem;
+  padding: .7rem; border-radius: 10px;
+  border: 1px solid var(--border); margin-bottom: .5rem;
+  transition: border-color .15s, background .15s;
+}
+.cert-row:last-child { margin-bottom: 0; }
+.cert-row:hover { border-color: var(--violet); background: var(--violet-dim); }
+.cert-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--violet); flex-shrink: 0; margin-top: .45rem; }
+.cert-text { font-size: .8rem; color: var(--sub); line-height: 1.5; }
+
+.strengths { display: flex; flex-wrap: wrap; gap: .4rem; }
+.strength {
+  font-size: .75rem; font-weight: 500; padding: .3rem .8rem; border-radius: 100px;
+  background: var(--violet-dim); border: 1px solid rgba(139,127,255,.2); color: var(--sub);
+  transition: color .15s, border-color .15s;
+}
+.strength:hover { color: var(--violet); border-color: var(--violet); }
+
+@media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; } }
