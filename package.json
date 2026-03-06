@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "mywebsite",
   "private": true,
   "version": "0.0.0",
@@ -33,5 +34,46 @@
   },
   "overrides": {
     "vite": "^8.0.0-beta.13"
+=======
+  "name": "ilknur-personal-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "postbuild": "copy dist\\index.html dist\\404.html"
+  },
+  "dependencies": {
+    "framer-motion": "^11.3.27",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-fast-marquee": "^1.6.5",
+    "react-icons": "^5.3.0",
+    "react-scroll": "^1.9.0",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-scroll": "^1.8.10",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.8.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^5.4.0"
+>>>>>>> 80aa729ede2be1d906193cce89a1f85c55717dbb
   }
 }

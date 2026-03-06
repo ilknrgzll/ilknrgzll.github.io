@@ -106,7 +106,7 @@ export default function Hero() {
           />
           {/* <div className="hero-photo-badge">
             <span className="hero-photo-badge-dot" />
-            {t("Open to work", "İş arıyorum")}
+            {t('Open to work', 'İş arıyorum')}
           </div> */}
         </motion.div>
       </div>
