@@ -42,14 +42,14 @@ export default function Hero() {
               <>
                 Building <strong>enterprise-grade software</strong> with C#,
                 ASP.NET Core and React (TypeScript). Specialised in{" "}
-                <strong>Clean Architecture</strong>, ERP integrations and
+                <strong>Clean Architecture</strong>, integrations and
                 high-traffic production systems.
               </>,
               <>
                 <strong>C#, ASP.NET Core</strong> ve React (TypeScript) ile
                 kurumsal ölçekte yazılım geliştiriyorum.{" "}
-                <strong>Clean Architecture</strong>, ERP entegrasyonları ve
-                yüksek trafikli sistemler konusunda deneyimliyim.
+                <strong>Clean Architecture</strong>, entegrasyonlar ve yüksek
+                trafikli sistemler konusunda deneyimliyim.
               </>,
             )}
           </motion.p>
@@ -90,7 +90,7 @@ export default function Hero() {
         >
           <div className="hero-photo-ring" />
           <img
-            src="/me.png"
+            src="/me.jpeg"
             alt="İlknur Güzel"
             className="hero-photo"
             onError={(e) => {

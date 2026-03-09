@@ -22,9 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-<<<<<<< HEAD
-=======
-
 
 public/cv_en.pdf
->>>>>>> 80aa729ede2be1d906193cce89a1f85c55717dbb

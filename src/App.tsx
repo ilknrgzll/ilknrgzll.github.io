@@ -1,13 +1,13 @@
-import { ThemeProvider } from './context/ThemeContext'
-import { LangProvider } from './context/LangContext'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Experience from './components/Experience'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import { LangProvider } from "./context/LangContext";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
         <Footer />
       </LangProvider>
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
