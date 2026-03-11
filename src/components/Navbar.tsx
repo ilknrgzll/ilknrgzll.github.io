@@ -1,36 +1,39 @@
-import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useTheme } from '../context/ThemeContext'
-import { useLang } from '../context/LangContext'
-import './Navbar.css'
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useLang } from "../context/LangContext";
+import { useTheme } from "../context/ThemeContext";
+import "./Navbar.css";
 
-const navIds = ['experience', 'projects', 'skills', 'about', 'contact']
+const navIds = ["experience", "projects", "skills", "about", "contact"];
 
 export default function Navbar() {
-  const { theme, toggle: toggleTheme } = useTheme()
-  const { lang, toggle: toggleLang } = useLang()
-  const [scrolled, setScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
+  const { theme, toggle: toggleTheme } = useTheme();
+  const { lang, toggle: toggleLang } = useLang();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 20)
-    window.addEventListener('scroll', fn, { passive: true })
-    return () => window.removeEventListener('scroll', fn)
-  }, [])
+    const fn = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", fn, { passive: true });
+    return () => window.removeEventListener("scroll", fn);
+  }, []);
 
-  const labels = lang === 'en'
-    ? ['Experience', 'Projects', 'Skills', 'About', 'Contact']
-    : ['Deneyim', 'Projeler', 'Beceriler', 'Hakkımda', 'İletişim']
+  const labels =
+    lang === "en"
+      ? ["Experience", "Projects", "Skills", "About", "Contact"]
+      : ["Deneyim", "Projeler", "Beceriler", "Hakkımda", "İletişim"];
 
   return (
     <>
       <motion.nav
-        className={`navbar${scrolled ? ' scrolled' : ''}`}
+        className={`navbar${scrolled ? " scrolled" : ""}`}
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: .6, ease: [.16, 1, .3, 1] }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
-        <a href="#hero" className="nav-logo">İlknur<em>.</em>dev</a>
+        <a href="#hero" className="nav-logo">
+          İlknur<em>.</em>dev
+        </a>
 
         <ul className="nav-menu">
           {labels.map((label, i) => (
@@ -41,30 +44,43 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-controls">
-          <button className="nav-pill" onClick={toggleLang} title="Toggle language">
-            <span className={lang === 'en' ? 'pill-active' : ''}>EN</span>
+          <button
+            className="nav-pill"
+            onClick={toggleLang}
+            title="Toggle language"
+          >
+            <span className={lang === "en" ? "pill-active" : ""}>EN</span>
             <span className="pill-sep">/</span>
-            <span className={lang === 'tr' ? 'pill-active' : ''}>TR</span>
+            <span className={lang === "tr" ? "pill-active" : ""}>TR</span>
           </button>
 
-          <button className="nav-icon-btn" onClick={toggleTheme} title="Toggle theme">
+          <button
+            className="nav-icon-btn"
+            onClick={toggleTheme}
+            title="Toggle theme"
+          >
             <AnimatePresence mode="wait">
               <motion.span
                 key={theme}
-                initial={{ rotate: -30, opacity: 0, scale: .7 }}
+                initial={{ rotate: -30, opacity: 0, scale: 0.7 }}
                 animate={{ rotate: 0, opacity: 1, scale: 1 }}
-                exit={{ rotate: 30, opacity: 0, scale: .7 }}
-                transition={{ duration: .2 }}
+                exit={{ rotate: 30, opacity: 0, scale: 0.7 }}
+                transition={{ duration: 0.2 }}
               >
-                {theme === 'dark' ? '☀️' : '🌙'}
+                {theme === "dark" ? "☀️" : "🌙"}
               </motion.span>
             </AnimatePresence>
           </button>
 
-          <a href="/İlknur_Güzel_CV.pdf" download className="nav-cv">↓ CV</a>
+          {/* <a href="/İlknur_Güzel_CV.pdf" download className="nav-cv">↓ CV</a> */}
 
-          <button className={`nav-hamburger${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(o => !o)}>
-            <span /><span /><span />
+          <button
+            className={`nav-hamburger${menuOpen ? " open" : ""}`}
+            onClick={() => setMenuOpen((o) => !o)}
+          >
+            <span />
+            <span />
+            <span />
           </button>
         </div>
       </motion.nav>
@@ -76,14 +92,20 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: .18 }}
+            transition={{ duration: 0.18 }}
           >
             {labels.map((label, i) => (
-              <a key={navIds[i]} href={`#${navIds[i]}`} onClick={() => setMenuOpen(false)}>{label}</a>
+              <a
+                key={navIds[i]}
+                href={`#${navIds[i]}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </a>
             ))}
           </motion.div>
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }

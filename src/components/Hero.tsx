@@ -61,9 +61,9 @@ export default function Hero() {
             <a href="#contact" className="btn-v ghost">
               {t("Get in Touch", "İletişime Geç")}
             </a>
-            <a href="/İlknur_Güzel_CV.pdf" download className="btn-v ghost">
+            {/* <a href="/İlknur_Güzel_CV.pdf" download className="btn-v ghost">
               {t("Download CV", "CV İndir")}
-            </a>
+            </a> */}
           </motion.div>
 
           <motion.div className="hero-stats" {...fadeUp(0.5)}>
