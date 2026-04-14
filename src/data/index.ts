@@ -1,5 +1,25 @@
 export const projects = [
   {
+    id: "12",
+    wide: true,
+    icon: "💼",
+    accent: "sky",
+    title: "Job Application Management Platform",
+    subtitle: "FULL-STACK · ADMIN PANEL · RECRUITMENT SYSTEM",
+    desc: "A full-stack job application management platform designed to streamline recruitment processes. The system enables candidates to submit applications while administrators manage job postings, departments, skills, and candidate evaluations through a role-based admin panel. Includes filtering, reporting, and scalable architecture for enterprise-level usage.",
+    stack: [
+      "C#",
+      "ASP.NET Core Web API",
+      "React (TypeScript)",
+      "Redux Toolkit",
+      "MySQL",
+      "Entity Framework Core",
+      "Role-Based Authorization",
+      "REST API",
+    ],
+    github: "https://github.com/ilknrgzll",
+  },
+  {
     id: "11",
     wide: true,
     icon: "📊",
