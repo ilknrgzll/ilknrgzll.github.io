@@ -1,5 +1,22 @@
 export const projects = [
   {
+  id: "13",
+  wide: true,
+  icon: "🏠",
+  accent: "sky",
+  title: "Rental & Receivables Management Platform",
+  subtitle: "FULL-STACK · RENT TRACKING · RECEIVABLES MANAGEMENT",
+  desc: "A full-stack rental and receivables management platform designed to track financial transactions based on ownership share ratios. The system manages properties, stakeholders, rental income, receivables, payables, collections, and payment distributions according to predefined share percentages. Includes balance tracking, transaction history, filtering, reporting, and centralized financial management.",
+  stack: [
+    "C#",
+    "ASP.NET Core",
+    "Dapper",
+    "MySQL",
+    "Role-Based Authorization",
+  ],
+  github: "https://github.com/ilknrgzll",
+},
+  {
     id: "12",
     wide: true,
     icon: "💼",
