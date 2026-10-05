@@ -67,7 +67,16 @@ function render() {
   $('summary').textContent=`${content.projects.length} proje · ${dirty?'Kaydedilmemiş değişiklikler var':'GitHub’daki güncel içerik'}`;
 }
 $('loginForm').addEventListener('submit',async e=>{
-  e.preventDefault();token=$('token').value.trim();const submit=e.target.querySelector('button');submit.disabled=true;message('İçerikler yükleniyor…');
+  e.preventDefault();
+  const enteredToken=$('token').value.trim();
+  if (!/^github_pat_[A-Za-z0-9_]+$/.test(enteredToken)) {
+    token='';
+    message('Bu alan GitHub’ın oluşturduğu erişim anahtarını bekliyor. Yalnızca github_pat_ ile başlayan değeri yapıştır; anahtar adını, açıklama metnini veya tırnak işaretlerini ekleme.');
+    $('token').focus();
+    return;
+  }
+  token=enteredToken;
+  const submit=e.target.querySelector('button');submit.disabled=true;message('İçerikler yükleniyor…');
   try{const file=await api(endpoint+'?ref='+BRANCH);const data=JSON.parse(decode(file.content));validate(data);content=data;sha=file.sha;dirty=false;$('token').value='';$('login').hidden=true;$('editor').hidden=false;$('logout').hidden=false;render();message('Giriş yapıldı. Düzenlemek istediğin projeyi aç.');}
   catch(error){token='';message(error.message);}finally{submit.disabled=false;}
 });
@@ -83,3 +92,4 @@ function tab(about){$('aboutEditor').hidden=!about;$('projectsEditor').hidden=ab
 $('projectsTab').addEventListener('click',()=>tab(false));$('aboutTab').addEventListener('click',()=>tab(true));
 $('logout').addEventListener('click',()=>{if(dirty&&!confirm('Kaydedilmemiş değişikliklerin var. Çıkış yapılsın mı?'))return;token='';content=null;sha='';dirty=false;$('editor').hidden=true;$('login').hidden=false;$('logout').hidden=true;$('projectList').replaceChildren();$('aboutFields').replaceChildren();message('Çıkış yapıldı.');});
 window.addEventListener('beforeunload',e=>{if(dirty||busy){e.preventDefault();e.returnValue='';}});
+
