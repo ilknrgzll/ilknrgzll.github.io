@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' https://api.github.com; img-src 'self' data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'">
+<title>Portföy yönetimi</title><link rel="stylesheet" href="style.css"><script src="panel.js" defer></script>
+</head>
+<body>
+<header><a href="/">← Portföye dön</a><span>İlknur · İçerik yönetimi</span><button id="logout" hidden>Çıkış yap</button></header>
+<main>
+<section id="login"><h1>Portföyünü güncelle</h1><p>Projelerini ve hakkımda metnini kod dosyası açmadan düzenle.</p>
+<form id="loginForm"><label for="token">GitHub erişim anahtarı</label><input id="token" type="password" autocomplete="off" required spellcheck="false"><p class="hint">Yalnızca ilknrgzll.github.io deposu için Contents: Read and write izni olan bir fine-grained anahtar kullan. Anahtar bu sekmenin belleğinde tutulur; dosyalara veya tarayıcı depolamasına kaydedilmez.</p><button type="submit">Panele giriş yap</button></form>
+<details><summary>İlk kurulum ve anahtar oluşturma</summary><p>Önce kaynak dosyaları main dalına gönderip Pages yayın kaynağını GitHub Actions olarak ayarla. GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens bölümünden yalnızca bu depoya Contents: Read and write izni ver. Anahtarı sadece bu giriş alanına yapıştır.</p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">GitHub’da anahtar oluştur ↗</a></details></section>
+<section id="editor" hidden><div class="toolbar"><div><h1>İçeriklerin</h1><p id="summary"></p></div><button id="publish">Değişiklikleri yayımla</button></div><p class="hint">Kayıt main dalına gönderilir. Otomatik yayın tamamlandığında site güncellenir.</p><nav aria-label="İçerik bölümleri"><button id="projectsTab" aria-pressed="true">Projeler</button><button id="aboutTab" aria-pressed="false">Hakkımda</button></nav><section id="projectsEditor"><div class="toolbar"><h2>Projeler</h2><button id="add">+ Proje ekle</button></div><div id="projectList"></div></section><section id="aboutEditor" hidden><h2>Hakkımda</h2><p>Her paragrafı boş bir satırla ayır.</p><div id="aboutFields" class="languages"></div></section><a href="https://github.com/ilknrgzll/ilknrgzll.github.io/actions" target="_blank" rel="noopener noreferrer">Yayın durumunu GitHub’da gör ↗</a></section>
+<p id="status" role="status" aria-live="polite"></p>
+</main></body></html>

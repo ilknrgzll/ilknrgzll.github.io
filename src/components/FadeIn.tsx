@@ -1,4 +1,5 @@
-import { useRef, useEffect, useState, ReactNode } from 'react'
+import { useRef, useEffect, useState } from 'react'
+import type { ReactNode } from 'react'
 
 interface Props {
   children: ReactNode
@@ -35,3 +36,4 @@ export default function FadeIn({ children, delay = 0, className = '' }: Props) {
     </div>
   )
 }
+

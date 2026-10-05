@@ -10,8 +10,8 @@
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "postbuild": "copy dist\\index.html dist\\404.html"
+    "deploy": "gh-pages -d dist -r https://github.com/ilknrgzll/ilknrgzll.github.io.git",
+    "postbuild": "node scripts/postbuild.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.3.27",

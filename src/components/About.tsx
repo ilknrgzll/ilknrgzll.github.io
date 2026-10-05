@@ -1,6 +1,7 @@
 import { useLang } from "../context/LangContext";
 import "./About.css";
 import FadeIn from "./FadeIn";
+import portfolio from "../content/portfolio.json";
 
 const strengths = {
   en: [
@@ -70,58 +71,9 @@ export default function About() {
             <FadeIn delay={0.05}>
               <div className="acard">
                 <div className="acard-title">{t("Background", "Hakkımda")}</div>
-                {lang === "en" ? (
-                  <>
-                    <p className="ap">
-                      I'm a <strong>Computer Engineer</strong> (Bozok
-                      University, 2023) born and based in Ankara. I build
-                      enterprise-grade software that actually runs in
-                      production.
-                    </p>
-                    <p className="ap">
-                      Currently at <strong>MODALife</strong> as a Full-Stack
-                      Software Engineer, working on live, high-traffic systems:
-                      ERP integrations, marketplace APIs, admin tools — all with{" "}
-                      <strong>Clean Architecture</strong>.
-                    </p>
-                    <p className="ap">
-                      My background spans full-stack web,{" "}
-                      <strong>deep learning</strong> (CNN, YOLOv5), and mobile
-                      (Flutter/Bloc). I care about clean, secure, maintainable
-                      code.
-                    </p>
-                    <p className="ap">
-                      Outside code: strategic thinking, creativity, continuous
-                      self-improvement — four languages in active use.
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <p className="ap">
-                      Ankara doğumlu ve yaşayan bir{" "}
-                      <strong>Bilgisayar Mühendisiyim</strong> (Bozok
-                      Üniversitesi, 2023). Gerçekten production'da çalışan
-                      kurumsal yazılımlar geliştiriyorum.
-                    </p>
-                    <p className="ap">
-                      Şu anda <strong>MODALife</strong>'ta Full-Stack Yazılım
-                      Geliştirici olarak çalışıyor, canlı yüksek trafikli
-                      sistemlerde ERP entegrasyonları ve admin araçları
-                      üretiyorum — hepsi <strong>Clean Architecture</strong>{" "}
-                      ile.
-                    </p>
-                    <p className="ap">
-                      Full-stack <strong>web</strong>,{" "}
-                      <strong>derin öğrenme</strong> (CNN, YOLOv5) alanlarında
-                      deneyimliyim. Temiz, güvenli ve sürdürülebilir kod yazmayı
-                      önemsiyorum.
-                    </p>
-                    <p className="ap">
-                      Kodun dışında: stratejik düşünce, yaratıcılık, sürekli öz
-                      gelişim — dört dil aktif kullanımda.
-                    </p>
-                  </>
-                )}
+                {portfolio.about[lang].map((paragraph, index) => (
+                  <p className="ap" key={index}>{paragraph}</p>
+                ))}
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
@@ -192,3 +144,4 @@ export default function About() {
     </section>
   );
 }
+

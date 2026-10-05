@@ -13,8 +13,8 @@ export default function Projects() {
           <div className="proj-header">
             <div>
               <div className="sec-kicker">{t('Projects', 'Projeler')}</div>
-              <h2 className="sec-h">{t(<>Selected <span className="light">Work</span></>, <>{t('Seçili', 'Seçili')} <span className="light">{t('Projeler', 'Projeler')}</span></>)}</h2>
-              <p className="sec-sub">{t('14 projects — from enterprise ERP systems to deep learning apps.', '14 proje — kurumsal ERP sistemlerinden derin öğrenme uygulamalarına.')}</p>
+              <h2 className="sec-h">{t("Selected", "Seçili")} <span className="light">{t("Work", "Projeler")}</span></h2>
+              <p className="sec-sub">{t(`${projects.length} projects — from enterprise ERP systems to deep learning apps.`, `${projects.length} proje — kurumsal ERP sistemlerinden derin öğrenme uygulamalarına.`)}</p>
             </div>
             <a href="https://github.com/ilknrgzll" target="_blank" rel="noopener noreferrer" className="btn-v ghost">
               GitHub →
@@ -24,9 +24,9 @@ export default function Projects() {
 
         <div className="proj-grid">
           {projects.map((p, i) => (
-            <FadeIn key={p.id} delay={(i % 3) * 0.07} className={p.wide ? 'wide-wrap' : ''}>
+            <FadeIn key={p.id} delay={(i % 3) * 0.07} className="project-wrap">
               <a
-                className={`proj-card ac-${p.accent}${p.wide ? ' wide' : ''}`}
+                className={`proj-card ac-${p.accent}`}
                 href={p.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -35,13 +35,13 @@ export default function Projects() {
                   <div className="pc-top-l">
                     <div className="pc-icon">{p.icon}</div>
                     <div>
-                      <div className="pc-title">{p.title}</div>
-                      <div className="pc-sub">{p.subtitle}</div>
+                      <div className="pc-title">{t(p.en.title, p.tr.title)}</div>
+                      <div className="pc-sub">{t(p.en.subtitle, p.tr.subtitle)}</div>
                     </div>
                   </div>
                   <div className="pc-arrow">↗</div>
                 </div>
-                <p className="pc-desc">{p.desc}</p>
+                <p className="pc-desc">{t(p.en.desc, p.tr.desc)}</p>
                 <div className="pc-tags">
                   {p.stack.map(s => <span key={s} className="ptag">{s}</span>)}
                 </div>
@@ -53,3 +53,5 @@ export default function Projects() {
     </section>
   )
 }
+
+

@@ -1,0 +1,335 @@
+{
+  "projects": [
+    {
+      "id": "13",
+      "icon": "🏠",
+      "accent": "sky",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "Dapper",
+        "MySQL",
+        "Role-Based Authorization"
+      ],
+      "en": {
+        "title": "Rental & Receivables Management Platform",
+        "subtitle": "FULL-STACK · RENT TRACKING · RECEIVABLES MANAGEMENT",
+        "desc": "A full-stack rental and receivables management platform designed to track financial transactions based on ownership share ratios. The system manages properties, stakeholders, rental income, receivables, payables, collections, and payment distributions according to predefined share percentages. Includes balance tracking, transaction history, filtering, reporting, and centralized financial management."
+      },
+      "tr": {
+        "title": "Kira ve Alacak Yönetim Platformu",
+        "subtitle": "UÇTAN UCA GELİŞTİRME · KİRA TAKİBİ · ALACAK YÖNETİMİ",
+        "desc": "Mülkiyet paylarına göre finansal işlemleri takip etmek için geliştirilen kira ve alacak yönetim platformu. Taşınmazları, paydaşları, kira gelirlerini, alacakları, borçları, tahsilatları ve ödeme dağılımlarını tanımlanan pay oranlarına göre yönetir. Bakiye takibi, işlem geçmişi, filtreleme, raporlama ve merkezi finans yönetimi sunar."
+      }
+    },
+    {
+      "id": "12",
+      "icon": "💼",
+      "accent": "sky",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "C#",
+        "ASP.NET Core Web API",
+        "React (TypeScript)",
+        "Redux Toolkit",
+        "MySQL",
+        "Entity Framework Core",
+        "Role-Based Authorization",
+        "REST API"
+      ],
+      "en": {
+        "title": "Job Application Management Platform",
+        "subtitle": "FULL-STACK · ADMIN PANEL · RECRUITMENT SYSTEM",
+        "desc": "A full-stack job application management platform designed to streamline recruitment processes. The system enables candidates to submit applications while administrators manage job postings, departments, skills, and candidate evaluations through a role-based admin panel. Includes filtering, reporting, and scalable architecture for enterprise-level usage."
+      },
+      "tr": {
+        "title": "İş Başvurusu Yönetim Platformu",
+        "subtitle": "UÇTAN UCA GELİŞTİRME · YÖNETİM PANELİ · İŞE ALIM SİSTEMİ",
+        "desc": "İşe alım süreçlerini kolaylaştırmak için geliştirilen iş başvurusu yönetim platformu. Adaylar başvurularını iletirken yöneticiler iş ilanlarını, departmanları, yetkinlikleri ve aday değerlendirmelerini rol tabanlı bir panelden yönetir. Filtreleme, raporlama ve ölçeklenebilir mimari içerir."
+      }
+    },
+    {
+      "id": "11",
+      "icon": "📊",
+      "accent": "sky",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "React TSX",
+        "Redux",
+        "MySQL",
+        "Role-Based Authorization",
+        "Analytics Dashboard",
+        "Task Tracking"
+      ],
+      "en": {
+        "title": "Employee Task & Performance Tracking System",
+        "subtitle": "ROLE-BASED ADMIN PANEL · ANALYTICS",
+        "desc": "Enterprise internal task tracking and employee performance management system. Users record daily tasks categorized by work type while the system calculates performance scores automatically. Includes role-based access control, user management, analytics dashboard and category-based reporting."
+      },
+      "tr": {
+        "title": "Çalışan Görev ve Performans Takip Sistemi",
+        "subtitle": "ROL TABANLI YÖNETİM PANELİ · ANALİZ",
+        "desc": "Kurum içi görev takibi ve çalışan performansı yönetim sistemi. Kullanıcılar günlük görevlerini iş türüne göre kaydeder; sistem performans puanlarını otomatik hesaplar. Rol tabanlı erişim kontrolü, kullanıcı yönetimi, analiz paneli ve kategori bazlı raporlama içerir."
+      }
+    },
+    {
+      "id": "01",
+      "icon": "🚚",
+      "accent": "violet",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "React TSX",
+        "Redux",
+        "MySQL",
+        "ERP",
+        "Tailwind CSS",
+        "Clean Architecture"
+      ],
+      "en": {
+        "title": "KargoLife — ERP Integration",
+        "subtitle": "ENTERPRISE · CLEAN ARCHITECTURE",
+        "desc": "Multi-layered ERP-integrated cargo tracking system. Users track shipments in real time; customer issues resolved via WhatsApp/email automation. Strict Clean Architecture layering across domain, application, infrastructure and presentation. State managed with Redux."
+      },
+      "tr": {
+        "title": "KargoLife — ERP Entegrasyonu",
+        "subtitle": "KURUMSAL YAZILIM · CLEAN ARCHITECTURE",
+        "desc": "ERP ile entegre, çok katmanlı kargo takip sistemi. Kullanıcılar gönderilerini gerçek zamanlı takip eder; müşteri sorunları WhatsApp ve e-posta otomasyonlarıyla ele alınır. Alan, uygulama, altyapı ve sunum katmanları Clean Architecture yaklaşımıyla ayrılır. Durum yönetiminde Redux kullanılır."
+      }
+    },
+    {
+      "id": "02",
+      "icon": "🛒",
+      "accent": "emerald",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "RESTful API",
+        "SOAP XML",
+        "MySQL",
+        "AutoMapper",
+        "Task Parallelism"
+      ],
+      "en": {
+        "title": "Marketplace Integration API",
+        "subtitle": "TRENDYOL · HEPSİBURADA · N11 · KOÇTAŞ",
+        "desc": "Centralized integration hub for 4 major Turkish marketplaces. Periodically pulls orders via REST and SOAP XML APIs, maps & normalizes data, persists to MySQL, and monitors anomalies. Task Parallelism for concurrent channel processing. Fault-tolerant high-volume architecture."
+      },
+      "tr": {
+        "title": "Pazaryeri Entegrasyon API’si",
+        "subtitle": "TRENDYOL · HEPSİBURADA · N11 · KOÇTAŞ",
+        "desc": "Türkiye’deki dört büyük pazaryerini bir araya getiren merkezi entegrasyon sistemi. REST ve SOAP XML API’leri üzerinden siparişleri belirli aralıklarla alır, verileri eşleyip standartlaştırır, MySQL’e kaydeder ve olağan dışı durumları izler. Kanallar paralel görevlerle işlenir; mimari yüksek işlem hacmi ve hata toleransı gözetilerek tasarlanmıştır."
+      }
+    },
+    {
+      "id": "03",
+      "icon": "📋",
+      "accent": "sky",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "React TSX",
+        "Redux",
+        "QR Code",
+        "MySQL",
+        "Role Auth"
+      ],
+      "en": {
+        "title": "ModaLife Teklif Entegrasyon",
+        "subtitle": "QR CODE · ROLE-BASED APPROVAL",
+        "desc": "Quote generation system — offers delivered to clients via QR code and email. Hierarchical role-based approval workflow for management sign-off. Redux state flows, Clean Architecture."
+      },
+      "tr": {
+        "title": "ModaLife Teklif Entegrasyonu",
+        "subtitle": "QR KOD · ROL TABANLI ONAY",
+        "desc": "Tekliflerin QR kod ve e-posta ile müşterilere iletilmesini sağlayan teklif oluşturma sistemi. Yönetici onayları için hiyerarşik, rol tabanlı bir iş akışı sunar. Redux ile durum yönetimi ve Clean Architecture yaklaşımı kullanılır."
+      }
+    },
+    {
+      "id": "04",
+      "icon": "🧠",
+      "accent": "pink",
+      "github": "https://github.com/ilknrgzll/SkinCancer",
+      "stack": [
+        "Python",
+        "CNN",
+        "React",
+        "Scikit-learn",
+        "Deep Learning",
+        "Logistic Regression",
+        "Pandas",
+        "NumPy"
+      ],
+      "en": {
+        "title": "Skin Cancer Detection AI",
+        "subtitle": "CNN · DEEP LEARNING · WEB APP",
+        "desc": "AI web app for skin cancer detection using CNN image classification on dermoscopy images. React frontend + Python/Flask backend. Trained to classify malignant vs benign cases."
+      },
+      "tr": {
+        "title": "Yapay Zekâ ile Cilt Kanseri Tespiti",
+        "subtitle": "CNN · DERİN ÖĞRENME · WEB UYGULAMASI",
+        "desc": "Dermoskopi görüntülerini CNN ile sınıflandıran, cilt kanseri tespitine yönelik yapay zekâ web uygulaması. React arayüzü ve Python/Flask sunucu tarafı kullanır. Model, kötü huylu ve iyi huylu vakaları ayırt etmek üzere eğitilmiştir."
+      }
+    },
+    {
+      "id": "05",
+      "icon": "🛍️",
+      "accent": "amber",
+      "github": "https://github.com/ilknrgzll/PurchasingManager",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "React TSX",
+        "Redux",
+        "MySQL"
+      ],
+      "en": {
+        "title": "Satın Alma Yönetim Paneli",
+        "subtitle": "INTERNAL TOOL · ROLE-BASED AUTH",
+        "desc": "Internal procurement panel. Records purchase requests, tracks multi-step workflow statuses, provides role-based authorization — different access levels see different views and actions."
+      },
+      "tr": {
+        "title": "Satın Alma Yönetim Paneli",
+        "subtitle": "KURUM İÇİ ARAÇ · ROL TABANLI YETKİLENDİRME",
+        "desc": "Satın alma taleplerini kaydeden ve çok adımlı iş akışlarının durumunu takip eden kurum içi yönetim paneli. Rol tabanlı yetkilendirme sayesinde farklı erişim düzeylerindeki kullanıcılar kendilerine uygun ekranları ve işlemleri görür."
+      }
+    },
+    {
+      "id": "06",
+      "icon": "📣",
+      "accent": "violet",
+      "github": "https://github.com/ilknrgzll/ComplaintManager",
+      "stack": [
+        "C#",
+        "ASP.NET Core",
+        "React",
+        "MySQL"
+      ],
+      "en": {
+        "title": "Şikayetvar Yönetim Paneli",
+        "subtitle": "CUSTOMER FEEDBACK · ADMIN PANEL",
+        "desc": "Admin panel for Şikayetvar.com complaints. Filtering, status updates, user-specific interaction history, and action tracking. Full audit trail."
+      },
+      "tr": {
+        "title": "Şikayetvar Yönetim Paneli",
+        "subtitle": "MÜŞTERİ GERİ BİLDİRİMİ · YÖNETİM PANELİ",
+        "desc": "Şikayetvar.com şikayetlerini yönetmek için geliştirilen panel. Filtreleme, durum güncelleme, kullanıcı bazlı etkileşim geçmişi ve işlem takibi sunar. Yapılan işlemlerin denetim kayıtlarını tutar."
+      }
+    },
+    {
+      "id": "07",
+      "icon": "📸",
+      "accent": "emerald",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "YOLOv5",
+        "Python",
+        "Dart",
+        "HTML",
+        "Web Service",
+        "Deep Learning"
+      ],
+      "en": {
+        "title": "Derin Öğrenme ile Stok Kontrol",
+        "subtitle": "YOLOV5 · OBJECT DETECTION · REAL-TIME",
+        "desc": "YOLOv5 object detection powered inventory system. Camera identifies products on warehouse shelves in real time and updates the database automatically — eliminating manual stock counting."
+      },
+      "tr": {
+        "title": "Derin Öğrenme ile Stok Kontrolü",
+        "subtitle": "YOLOV5 · NESNE TESPİTİ · GERÇEK ZAMANLI TAKİP",
+        "desc": "YOLOv5 ile nesne tespiti kullanan stok kontrol sistemi. Kamera, depo raflarındaki ürünleri gerçek zamanlı tanır ve veritabanını otomatik günceller; böylece manuel stok sayımı ihtiyacını ortadan kaldırır."
+      }
+    },
+    {
+      "id": "08",
+      "icon": "📝",
+      "accent": "violet",
+      "github": "https://github.com/ilknrgzll/Ndp",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Bloc",
+        "Cubit",
+        "ML Kit",
+        "Lottie",
+        "Dynamic Color"
+      ],
+      "en": {
+        "title": "Template Based Note App",
+        "subtitle": "FLUTTER · BLOC · MOBILE",
+        "desc": "Flutter note app beyond plain text — users pick templates combining video, photos, voice & text. ML Kit for text recognition. Bloc/Cubit state, Dynamic theming + Lottie."
+      },
+      "tr": {
+        "title": "Şablon Tabanlı Not Uygulaması",
+        "subtitle": "FLUTTER · BLOC · MOBİL UYGULAMA",
+        "desc": "Video, fotoğraf, ses ve metni birleştiren şablonlarla not oluşturmayı sağlayan Flutter uygulaması. Metin tanıma için ML Kit; durum yönetimi için Bloc/Cubit kullanır. Dinamik tema ve Lottie animasyonları içerir."
+      }
+    },
+    {
+      "id": "09",
+      "icon": "🗄️",
+      "accent": "emerald",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "Python",
+        "Multithreading",
+        "Data Analysis",
+        "Desktop App"
+      ],
+      "en": {
+        "title": "Big Data Multithreading App",
+        "subtitle": "PYTHON · DESKTOP · PERFORMANCE",
+        "desc": "Desktop Python app for large dataset analysis via multithreading. User sets similarity threshold; app compares columns and lists matches with per-thread execution metrics."
+      },
+      "tr": {
+        "title": "Çok İş Parçacıklı Büyük Veri Uygulaması",
+        "subtitle": "PYTHON · MASAÜSTÜ · PERFORMANS",
+        "desc": "Büyük veri kümelerini birden fazla iş parçacığıyla analiz eden Python masaüstü uygulaması. Kullanıcı benzerlik eşiğini belirler; uygulama sütunları karşılaştırır, eşleşmeleri listeler ve her iş parçacığının çalışma ölçümlerini gösterir."
+      }
+    },
+    {
+      "id": "10",
+      "icon": "🧪",
+      "accent": "amber",
+      "github": "https://github.com/ilknrgzll",
+      "stack": [
+        "PHP",
+        "HTML",
+        "CSS",
+        "Report Generation"
+      ],
+      "en": {
+        "title": "Laboratuvar Yönetim Paneli",
+        "subtitle": "PHP · REPORT GENERATION",
+        "desc": "Laboratory management panel. Records test results, generates formatted reports, direct report downloads. Simple, purpose-built internal tool."
+      },
+      "tr": {
+        "title": "Laboratuvar Yönetim Paneli",
+        "subtitle": "PHP · RAPOR OLUŞTURMA",
+        "desc": "Test sonuçlarını kaydeden, biçimlendirilmiş raporlar oluşturan ve raporların doğrudan indirilmesini sağlayan laboratuvar yönetim paneli. Kurum içi kullanım için geliştirilmiş, amaca odaklı bir araçtır."
+      }
+    }
+  ],
+  "about": {
+    "en": [
+      "I’m a software developer based in Ankara and a 2023 Computer Engineering graduate of Bozok University. I focus on building applications that simplify business processes, meet practical everyday needs, and can be maintained and developed over time.",
+      "At MODALife, I work on enterprise applications as a Full-Stack Software Developer. I develop backend services with C# and ASP.NET Core and user interfaces with React and TypeScript. My work covers ERP and marketplace integrations, cargo tracking, procurement workflows, and task and performance management.",
+      "Beyond making features work, I care about understanding the business need behind them. How data is managed, which actions users can access, and how a system can adapt to new requirements are central to my approach. I aim to make applications easier to maintain through Clean Architecture, role-based authorization, and clear code structures.",
+      "Alongside web development, I have built image classification and object detection projects with CNN and YOLOv5, as well as mobile applications with Flutter. Working across these technologies helps me look at problems from different perspectives and choose a solution suited to the task.",
+      "Learning new things, investigating the causes of a problem, and turning what I learn into a working project motivate me. As I develop my technical skills, I also value team communication, taking responsibility, and learning from user feedback."
+    ],
+    "tr": [
+      "Ankara’da yaşayan, 2023 yılında Bozok Üniversitesi Bilgisayar Mühendisliği bölümünden mezun olmuş bir yazılım geliştiriciyim. İş süreçlerini kolaylaştıran, günlük kullanımda karşılığı olan ve sürdürülebilir biçimde geliştirilebilen uygulamalar üretmeye odaklanıyorum.",
+      "MODALife’ta Full-Stack Yazılım Geliştirici olarak kurumsal uygulamalar üzerinde çalışıyorum. C# ve ASP.NET Core ile sunucu tarafını, React ve TypeScript ile kullanıcı arayüzlerini geliştiriyorum. ERP ve pazaryeri entegrasyonlarından kargo takibine, satın alma süreçlerinden görev ve performans yönetimine kadar farklı ihtiyaçlara yönelik çözümler üretiyorum.",
+      "Bir projede yalnızca özelliklerin çalışmasını değil, iş ihtiyacının doğru anlaşılmasını da önemsiyorum. Verinin nasıl yönetileceği, kullanıcıların hangi işlemlere erişebileceği ve sistemin yeni ihtiyaçlara nasıl uyarlanacağı geliştirme yaklaşımımın önemli parçaları. Clean Architecture, rol tabanlı yetkilendirme ve anlaşılır kod yapılarıyla bakımını kolaylaştıran uygulamalar geliştirmeyi hedefliyorum.",
+      "Web geliştirme çalışmalarımın yanında, CNN ve YOLOv5 ile görüntü sınıflandırma ve nesne tespiti; Flutter ile mobil uygulama geliştirme alanlarında da projeler ürettim. Farklı teknolojilerle çalışmak, problemlere birden fazla açıdan bakmamı ve ihtiyaca uygun çözümü seçmemi sağlıyor.",
+      "Yeni şeyler öğrenmek, bir sorunun nedenini araştırmak ve öğrendiklerimi somut bir projeye dönüştürmek beni motive ediyor. Teknik becerilerimi geliştirirken ekip içi iletişime, sorumluluk almaya ve kullanıcı geri bildirimlerinden öğrenmeye de önem veriyorum."
+    ]
+  }
+}

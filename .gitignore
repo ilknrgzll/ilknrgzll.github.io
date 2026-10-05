@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 public/cv_en.pdf
+
+# Local scratch files
+work/
+
